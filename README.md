@@ -4,4 +4,4 @@
 
 This is the official resource pack for shop permits on the Timber Tales SMP server.
 
-Based on the Hermit Permits resource pack created by SaplingEmo366 
+Credit to [SaplingEmo366](https://www.curseforge.com/members/saplingemo366/projects) for creating the starting point of this pack.
