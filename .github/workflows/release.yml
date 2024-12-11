@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build-release:
+    name: Build and Upload Release Asset
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up variables
+        id: vars
+        run: |
+          # Extract version from the Git tag
+          VERSION=${GITHUB_REF_NAME#v}
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          ZIP_NAME="Timber Tales SMP Permits (${VERSION})"
+          echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
+
+      - name: Install zip utility
+        run: sudo apt-get install -y zip
+
+      - name: Create ZIP excluding .deployignore files
+        run: |
+          mkdir temp-staging
+          rsync -av --exclude-from=.deployignore ./ temp-staging/
+          zip -r "${ZIP_NAME}.zip" ./temp-staging
+
+      - name: Upload ZIP artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: release-zip
+          path: "${{ env.ZIP_NAME }}.zip"
+      
+      
