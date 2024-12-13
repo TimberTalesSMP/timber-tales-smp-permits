@@ -27,6 +27,9 @@ jobs:
 
       - name: Create ZIP excluding .deployignore files
         run: zip -r ${{ env.ZIP_NAME }}.zip ./ -x@.deployignore
+      
+      - name: List all files
+        run: ls -la
 
       - name: Upload files to current release
         uses: svenstaro/upload-release-action@2.5.0
