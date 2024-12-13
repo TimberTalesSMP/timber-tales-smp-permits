@@ -19,7 +19,7 @@ jobs:
           # Extract version from the Git tag
           VERSION=${GITHUB_REF_NAME#v}
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
-          ZIP_NAME="Timber Tales SMP Permits ${VERSION}"
+          ZIP_NAME="TimberTalesSMP-Permits-${VERSION}"
           echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
 
       - name: Install zip utility
