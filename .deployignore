@@ -1,6 +1,6 @@
 README.md
 .gitignore
-.github
+.git*
 .DS_Store
 .deployignore
 gh-banner.jpg
