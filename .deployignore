@@ -1,8 +1,8 @@
-README.md
-.gitignore
-.git*
-.DS_Store
-.deployignore
-gh-banner.jpg
-icon-lg.png
-LICENSE
+./README.md
+./.gitignore
+./.git*
+./.DS_Store
+./.deployignore
+./gh-banner.jpg
+./icon-lg.png
+./LICENSE
