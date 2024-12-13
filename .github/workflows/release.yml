@@ -26,10 +26,7 @@ jobs:
         run: sudo apt-get install -y zip
 
       - name: Create ZIP excluding .deployignore files
-        run: |
-          mkdir temp-staging
-          rsync -av --exclude-from=.deployignore ./ temp-staging/
-          zip -r "${ZIP_NAME}.zip" ./temp-staging
+        run: zip -r ${{ env.ZIP_NAME }}.zip ./ -x@.deployignore
 
       - name: Upload ZIP artifact
         uses: actions/upload-artifact@v3
