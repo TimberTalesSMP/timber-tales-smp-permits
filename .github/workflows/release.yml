@@ -28,10 +28,13 @@ jobs:
       - name: Create ZIP excluding .deployignore files
         run: zip -r ${{ env.ZIP_NAME }}.zip ./ -x@.deployignore
 
-      - name: Upload ZIP artifact
-        uses: actions/upload-artifact@v3
+      - name: Upload files to current release
+        uses: svenstaro/upload-release-action@2.5.0
         with:
-          name: release-zip
-          path: "${{ env.ZIP_NAME }}.zip"
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ env.ZIP_FILE_NAME}}.zip
+          asset_name: ${{ env.ZIP_NAME}}.zip
+          tag: ${{ github.ref }}
+          overwrite: true
       
       
