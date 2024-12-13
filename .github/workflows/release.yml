@@ -32,7 +32,7 @@ jobs:
         uses: svenstaro/upload-release-action@2.5.0
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ${{ env.ZIP_FILE_NAME}}.zip
+          file: ${{ env.ZIP_NAME}}.zip
           asset_name: ${{ env.ZIP_NAME}}.zip
           tag: ${{ github.ref }}
           overwrite: true
