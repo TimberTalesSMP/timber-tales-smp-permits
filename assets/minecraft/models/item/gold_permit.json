@@ -3,8 +3,8 @@
 	"texture_size": [64, 64],
 	"gui_light": "front",
 	"textures": {
-		"2": "item/goldpermit",
-		"particle": "item/goldpermit"
+		"2": "item/gold_permit",
+		"particle": "item/gold_permit"
 	},
 	"elements": [
 		{
