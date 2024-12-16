@@ -11,21 +11,21 @@
                 "when": "iron",
                 "model": {
                     "type": "model",
-                    "model": "item/iron"
+                    "model": "item/iron_permit"
                 }
             },
             {
                 "when": "gold",
                 "model": {
                     "type": "model",
-                    "model": "item/gold"
+                    "model": "item/gold_permit"
                 }
             },
             {
                 "when": "diamond",
                 "model": {
                     "type": "model",
-                    "model": "item/diamond"
+                    "model": "item/diamond_permit"
                 }
             }
         ]
