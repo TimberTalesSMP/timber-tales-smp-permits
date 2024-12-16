@@ -3,8 +3,8 @@
 	"texture_size": [64, 64],
 	"gui_light": "front",
 	"textures": {
-		"3": "item/diamondpermit",
-		"particle": "item/diamondpermit"
+		"3": "item/diamond_permit",
+		"particle": "item/diamond_permit"
 	},
 	"elements": [
 		{
