@@ -4,28 +4,28 @@
         "property": "custom_model_data",
         "fallback": {
             "type": "model",
-            "model": "item/paper"
+            "model": "minecraft:item/paper"
         },
         "cases": [
             {
                 "when": "iron",
                 "model": {
                     "type": "model",
-                    "model": "item/iron_permit"
+                    "model": "permits:item/iron_permit"
                 }
             },
             {
                 "when": "gold",
                 "model": {
                     "type": "model",
-                    "model": "item/gold_permit"
+                    "model": "permits:item/gold_permit"
                 }
             },
             {
                 "when": "diamond",
                 "model": {
                     "type": "model",
-                    "model": "item/diamond_permit"
+                    "model": "permits:item/diamond_permit"
                 }
             }
         ]
