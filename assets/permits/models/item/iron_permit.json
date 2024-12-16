@@ -3,8 +3,8 @@
 	"texture_size": [64, 64],
 	"gui_light": "front",
 	"textures": {
-		"1": "item/iron_permit",
-		"particle": "item/iron_permit"
+		"1": "permits:item/iron_permit",
+		"particle": "permits:item/iron_permit"
 	},
 	"elements": [
 		{
